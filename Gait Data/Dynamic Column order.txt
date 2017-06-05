@@ -1,0 +1,198 @@
+1        head   neck
+2        head   spine shoulder
+3        head   shoulder left
+4        head   shoulder right
+5        head   elbow left
+6        head   elbow right
+7        head   wrist left
+8        head   wrist right
+9        head   hand left
+10        head   hand right
+11        head   spine mid
+12        head   hip left
+13        head   hip right
+14        head   knee left
+15        head   knee right
+16        head   ankle left
+17        head   ankle right
+18        head   foot left
+19        head   foot right
+20        neck   spine shoulder
+21        neck   shoulder left
+22        neck   shoulder right
+23        neck   elbow left
+24        neck   elbow right
+25        neck   wrist left
+26        neck   wrist right
+27        neck   hand left
+28        neck   hand right
+29        neck   spine mid
+30        neck   hip left
+31        neck   hip right
+32        neck   knee left
+33        neck   knee right
+34        neck   ankle left
+35        neck   ankle right
+36        neck   foot left
+37        neck   foot right
+38        spine shoulder   shoulder left
+39        spine shoulder   shoulder right
+40        spine shoulder   elbow left
+41        spine shoulder   elbow right
+42        spine shoulder   wrist left
+43        spine shoulder   wrist right
+44        spine shoulder   hand left
+45        spine shoulder   hand right
+46        spine shoulder   spine mid
+47        spine shoulder   hip left
+48        spine shoulder   hip right
+49        spine shoulder   knee left
+50        spine shoulder   knee right
+51        spine shoulder   ankle left
+52        spine shoulder   ankle right
+53        spine shoulder   foot left
+54        spine shoulder   foot right
+55        shoulder left   shoulder right
+56        shoulder left   elbow left
+57        shoulder left   elbow right
+58        shoulder left   wrist left
+59        shoulder left   wrist right
+60        shoulder left   hand left
+61        shoulder left   hand right
+62        shoulder left   spine mid
+63        shoulder left   hip left
+64        shoulder left   hip right
+65        shoulder left   knee left
+66        shoulder left   knee right
+67        shoulder left   ankle left
+68        shoulder left   ankle right
+69        shoulder left   foot left
+70        shoulder left   foot right
+71        shoulder right   elbow left
+72        shoulder right   elbow right
+73        shoulder right   wrist left
+74        shoulder right   wrist right
+75        shoulder right   hand left
+76        shoulder right   hand right
+77        shoulder right   spine mid
+78        shoulder right   hip left
+79        shoulder right   hip right
+80        shoulder right   knee left
+81        shoulder right   knee right
+82        shoulder right   ankle left
+83        shoulder right   ankle right
+84        shoulder right   foot left
+85        shoulder right   foot right
+86        elbow left   elbow right
+87        elbow left   wrist left
+88        elbow left   wrist right
+89        elbow left   hand left
+90        elbow left   hand right
+91        elbow left   spine mid
+92        elbow left   hip left
+93        elbow left   hip right
+94        elbow left   knee left
+95        elbow left   knee right
+96        elbow left   ankle left
+97        elbow left   ankle right
+98        elbow left   foot left
+99        elbow left   foot right
+100        elbow right   wrist left
+101        elbow right   wrist right
+102        elbow right   hand left
+103        elbow right   hand right
+104        elbow right   spine mid
+105        elbow right   hip left
+106        elbow right   hip right
+107        elbow right   knee left
+108        elbow right   knee right
+109        elbow right   ankle left
+110        elbow right   ankle right
+111        elbow right   foot left
+112        elbow right   foot right
+113        wrist left   wrist right
+114        wrist left   hand left
+115        wrist left   hand right
+116        wrist left   spine mid
+117        wrist left   hip left
+118        wrist left   hip right
+119        wrist left   knee left
+120        wrist left   knee right
+121        wrist left   ankle left
+122        wrist left   ankle right
+123        wrist left   foot left
+124        wrist left   foot right
+125        wrist right   hand left
+126        wrist right   hand right
+127        wrist right   spine mid
+128        wrist right   hip left
+129        wrist right   hip right
+130        wrist right   knee left
+131        wrist right   knee right
+132        wrist right   ankle left
+133        wrist right   ankle right
+134        wrist right   foot left
+135        wrist right   foot right
+136        hand left   hand right
+137        hand left   spine mid
+138        hand left   hip left
+139        hand left   hip right
+140        hand left   knee left
+141        hand left   knee right
+142        hand left   ankle left
+143        hand left   ankle right
+144        hand left   foot left
+145        hand left   foot right
+146        hand right   spine mid
+147        hand right   hip left
+148        hand right   hip right
+149        hand right   knee left
+150        hand right   knee right
+151        hand right   ankle left
+152        hand right   ankle right
+153        hand right   foot left
+154        hand right   foot right
+155        spine mid   hip left
+156        spine mid   hip right
+157        spine mid   knee left
+158        spine mid   knee right
+159        spine mid   ankle left
+160        spine mid   ankle right
+161        spine mid   foot left
+162        spine mid   foot right
+163        hip left   hip right
+164        hip left   knee left
+165        hip left   knee right
+166        hip left   ankle left
+167        hip left   ankle right
+168        hip left   foot left
+169        hip left   foot right
+170        hip right   knee left
+171        hip right   knee right
+172        hip right   ankle left
+173        hip right   ankle right
+174        hip right   foot left
+175        hip right   foot right
+176        knee left   knee right
+177        knee left   ankle left
+178        knee left   ankle right
+179        knee left   foot left
+180        knee left   foot right
+181        knee right   ankle left
+182        knee right   ankle right
+183        knee right   foot left
+184        knee right   foot right
+185        ankle left   ankle right
+186        ankle left   foot left
+187        ankle left   foot right
+188        ankle right   foot left
+189        ankle right   foot right
+190        foot left   foot right
+191			stride
+192			elbows distance
+193			knee distance		
+194 		hand distance
+195 		head X
+196			head Y
+197			knee left Y
+198			knee right Y
