@@ -1,7 +1,7 @@
-clear all
+clear 
 %***
-dynamic = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Azfar\dynamicAzf2.txt');
-static = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Azfar\staticAzf2.txt');
+dynamic = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Train\dynamicRud4.txt');
+static = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Train\staticRud4.txt');
 %***
 static = mean(static);
 str = dynamic(:,191); 
@@ -58,11 +58,12 @@ fVariance=var(sigma);
 
 
 %***
-identity=1;
+identity=8;
 %***
 fsvm=[static,svm,fVariance,identity];
-%save ('SVM.txt','fsvm','-append','-ascii');
-%load('SVM.txt')
+%fsvm=dataset({fsvm 'Height','Kheight','FullArm','UpperArm','LowerArm','Torso','FullLeg' ,'Thigh','LowerLeg','ankleDist','elbowDist','kneeDist','handDist','HeadX','HeadY','kneeLY','kneeRY','varHeadX','varHeadY','varKneeLY','varKneeRY','ID'});
+save ('SVM.txt','fsvm','-append','-ascii');
+load('SVM.txt')
 %figure(3);
 %plot(warp(:,191));
 
