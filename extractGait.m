@@ -1,12 +1,8 @@
-clear 
-%***
-dynamic = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Train\dynamicRud4.txt');
-static = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Train\staticRud4.txt');
-%***
+function fsvm = extractGait(dynamic,static,id)
 static = mean(static);
 str = dynamic(:,191); 
 
-area = size(dynamic);
+
 
 %moving average filter
 
@@ -25,7 +21,7 @@ avg = (max(stride)+min(stride))/2;
 t = 1:length(str);
 %figure(1);
 %plot(t,str,'m',t,stride,'b');
-legend('original','mask is 1/4');
+%legend('original','mask is 1/4');
 k=1;
 count =0;
 for i=2:length(stride)-1
@@ -40,7 +36,7 @@ k=k+1;
 end
 end
 
-val=val(1:3);
+
 pos=pos(1:3);
 %figure(2);
 %plot(t,stride,t(pos),stride(pos));
@@ -57,13 +53,9 @@ fVariance=var(sigma);
 
 
 
-%***
-identity=8;
-%***
-fsvm=[static,svm,fVariance,identity];
-%fsvm=dataset({fsvm 'Height','Kheight','FullArm','UpperArm','LowerArm','Torso','FullLeg' ,'Thigh','LowerLeg','ankleDist','elbowDist','kneeDist','handDist','HeadX','HeadY','kneeLY','kneeRY','varHeadX','varHeadY','varKneeLY','varKneeRY','ID'});
-save ('SVM.txt','fsvm','-append','-ascii');
-load('SVM.txt')
+
+fsvm=[static,svm,fVariance,id];
+
 %figure(3);
 %plot(warp(:,191));
 
