@@ -29,7 +29,7 @@ val =ones(1,3);
 weight = 0.8*max(stride)+min(stride);
 for i=2:length(stride)-1
 if stride(i) >= avg
-    count=count+1;
+ count=count+1;
 end
 %if (stride(i)>((max(stride)+min(stride))/2.3))
  if (stride(i)>weight/2)   

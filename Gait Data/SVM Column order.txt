@@ -11,10 +11,6 @@ ankle distance(stride)
 elbows distance
 knee distance		
 hand distance
-head X
-head Y
-knee left Y
-knee right Y
 variance head X
 variance head Y
 variance knee left Y
