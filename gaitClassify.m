@@ -11,9 +11,6 @@ Rsvm(temp,k)=1;
 k=k+1;
 end
 
-
-
-
 Train = array2table(Rsvm);
 Train.Properties.VariableNames = {'Height','Kheight','FullArm','UpperArm','LowerArm','Torso','FullLeg' ,'Thigh','LowerLeg','ankleDist','elbowDist','kneeDist','handDist','varHeadX','varHeadY','varKneeLY','varKneeRY','ID','Anna_Class','Arpita_Class','Azfar_Class','John_Class','Mrinal_Class','Neviya_Class','Nishant_Class','Rudra_Class','Dravya_Class'};
 

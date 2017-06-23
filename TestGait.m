@@ -1,8 +1,8 @@
 clear;
 
 %***
-dynamic = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Train\dynamicArpita4.txt');
-static = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Train\staticArpita4.txt');
+dynamic = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Test\dynamicArpita6.txt');
+static = csvread ('C:\Users\Az3o5\Documents\Kinect Project\Gait-Recognition\Gait Data\Test\staticArpita6.txt');
 %***
 identity=0;
 [fsvm,warp] = extractGait(dynamic,static,identity);

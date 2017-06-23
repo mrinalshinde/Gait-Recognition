@@ -21,7 +21,7 @@ for i=1:190
 end
 location = find(count>=15);
 num = length(location);
-%hist(warp(:,8),50);
+hist(warp(:,8),50);
 type=[count,identity];
 save ('countAvg.txt','type','-append','-ascii');
 load('countAvg.txt');
