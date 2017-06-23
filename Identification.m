@@ -1,8 +1,8 @@
 function [Final_Id] =Identification(TestL)
 
-TestL=[TestL(:,1:13),TestL(:,18:21)];
+
 Test = array2table(TestL);
-Test.Properties.VariableNames = {'Height','Kheight','FullArm','UpperArm','LowerArm','Torso','FullLeg' ,'Thigh','LowerLeg','ankleDist','elbowDist','kneeDist','handDist','varHeadX','varHeadY','varKneeLY','varKneeRY'};
+Test.Properties.VariableNames = {'Kheight','FullArm','UpperArm','LowerArm','FullLeg' ,'Thigh','LowerLeg','ankleDist','elbowDist','kneeDist','handDist','varHeadX','varHeadY','varKneeLY','varKneeRY'};
 Names = {'Anna';'Arpita'; 'Azfar' ;'John'; 'Mrinal'; 'Neviya'; 'Nishant' ;'Rudra';'Dravya' };
 Id = zeros(size(TestL,1),1);
 Identity = num2cell(Id);

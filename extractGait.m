@@ -17,19 +17,18 @@ y = filter(b,a,dynamic);
      
 stride = y(:,191);  
 avg = (max(stride)+min(stride))/1.75; 
-%plot(stride);
 t = 1:length(str);
 %figure(1);
 %plot(t,str,'m',t,stride,'b');
 %legend('original','mask is 1/4');
 k=1;
-count =0;
+flag =0;
 pos = -1*ones(1,3);
 val =ones(1,3);
 weight = 0.8*max(stride)+min(stride);
 for i=2:length(stride)-1
 if stride(i) >= avg
- count=count+1;
+ flag=1;
 end
 %if (stride(i)>((max(stride)+min(stride))/2.3))
  if (stride(i)>weight/2)   
@@ -39,7 +38,7 @@ if k>3
     break;
 end
   
-if ( stride(i-1)>stride(i) && stride(i+1)>stride(i)&& count >0 )
+if ( stride(i-1)>stride(i) && stride(i+1)>stride(i)&& flag ==1 )
 val(k)=stride(i);
 pos(k)=i;
 
@@ -53,13 +52,13 @@ plot(t,stride,t(pos),stride(pos));
 
 
 warp=y(pos(1):pos(3),1:191);
-svm=y(pos(1):pos(3),191:198);
+svm=y(pos(1):pos(3),191:194);
 svm = mean(svm);
 
 sigma = y(pos(1):pos(3),195:198);
 
 
-fVariance=var(sigma);
+fVariance=var(sigma,1);
 
 
 
