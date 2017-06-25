@@ -18,6 +18,6 @@ Train.Properties.VariableNames = {'Kheight','FullArm','UpperArm','LowerArm','Ful
 TestL=load('SVMtest.txt');
 Test = array2table(TestL);
 Test.Properties.VariableNames = {'Kheight','FullArm','UpperArm','LowerArm','FullLeg' ,'Thigh','LowerLeg','ankleDist','elbowDist','kneeDist','handDist','varHeadX','varHeadY','varKneeLY','varKneeRY'};
-%%yfit = predict(ClassifierName, Test{:,:});
+%yfit = predict(ClassifierName, Test{:,:});
 
 
